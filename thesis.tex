@@ -1,0 +1,123 @@
+\documentclass{thesis}
+%%%%%%%%%%%%%%%%%%%%%%
+\title{Improved monitoring of ecosystem resilience using high-resolution remote sensing}
+\author{Laura Natali Sotomayor, \\
+Geography, Planning, and Spatial Sciences.}
+\degree{
+% 	A dissertation submitted in partial fulfilment of the \\
+% requirements for the degree of \\
+PhD in Geomatic Engineering}
+\colorprint
+%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\maketitle
+ 
+\section*{Abstract}
+
+% As technologies and computer storage capacity develops, there are ever increasing amounts of data available for us to use.  Despite this increase in available data, historically there have been limited benefits from it because of the issues involved in analysis of such large quantities because traditional statistical techniques are slow to process such large volumes. The recent development of machine learning algorithms and cloud technologies presents an unique opportunity to process these volumes of data, and have the potential to provide much greater accuracy and model predictive power in output results. 
+
+% In this study, machine learning algorithms (MLAs) and cloud base systems have been used to assess the key drivers of forest productivity in radiata pine plantations in Tasmania. Data on 23 predictor variables known to impact forest productivity were collated, including climate, topographic and edaphic variables, and used these to test the accuracy of 5 different MLAs - Linear regression (LM), Polynomial regression (Poly\_reg), Decision Trees Regression (DTree), Random Forests (RF) and Gradient Boosted Regression Trees (GBDT). It was found that the best model was GBDT, which had predictive power of $>$ 0.845 for unseen data, although the other methods also proved successful with predictive powers of 0.85 (RF) and 0.703 (DTree) respectively. In these three most accurate models, rainfall was the most important factor driving forest productivity, followed by the topographic position index (TPI), geology composition (SYMBOL) and aspect landscape attribute.
+
+% The outputs of models varied from model to model, and it was proven that adding a certain amount of complexity improves the quality of the model. This complexity allows a better understanding of the relationship between features and the interactions with the target variable. Tuning the model complexity is key to improving the data fitting process resulting in more accurate models.
+
+% This work is important in demonstrating the usefullness of MLAs and cloud based systems to improve the accuracy and the efficiency of assessments and predictions using big data.
+
+\clearpage
+
+\section*{Acknowledgements}
+
+\ifdrafting\else
+\textbf{Dr. Arko Lucieer} (Head of School, Geography, Planning, and Spatial Sciences, University of Tasmania), 
+\textbf{Dr. Bethany Melville} (Lecturer in Spatial Sciences) 
+% The authors would like to thank Dr. Matthew J. Cracknell for assisting with field machine learning process, understanding of data processing, transformation and reprojection. Besides, my father \textbf{Jesus Sotomayor} (Petrophysicist Engineer/Geoscientist) has been assessing the machine learning process, mapping and geological interpretations and which comments have improved the clarity of this ICT Honours Master Thesis. Dr Muhammed was a great mentor for the shape of the document and iterative feedback. Dr. Musk gave me feedback and understanding of features that can affect the forest productivity, and a good understanding of LiDAR technology. Besides, my mum \textbf{Patricia Ramirez} and \textbf{Robert Darwall} have been a great support for having all set up at home during this Covid time. In addition, my partner \textbf{Claire Butler} (Marine scientist) for all the support for keeping my light bright and meaningful comments to improve this Thesis.
+
+\vspace{5mm}
+\begin{quotation}
+% \textit{"Uncertainty about future events is the reason for forecasting. Forecast or prediction only reduce uncertainty but it does not eliminate the uncertainty phenomena." \citep{krzysztofowicz2001case}}
+\end{quotation}
+
+\begin{quotation}
+% \textit{"We are drowning in information and starving for knowledge"-Rutherford D. Roger \citep{hastie2009elements}}
+\end{quotation}
+
+\contentspage
+%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{header-footer}
+
+% \part{History of Lua\TeX}
+\part{Deriving fractional cover from drone multispectral and lidar data}
+\input{chapters/introduction.tex}
+%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{header-footer}
+
+\input{chapters/litreview.tex}
+\input{chapters/methodology.tex}
+\input{chapters/analysis.tex}
+\input{chapters/discussion.tex}
+\input{chapters/conclusion.tex}
+\setcounter{chapter}{0}
+
+\part{Structure properties derived from drone lidar data}
+\input{chapters2/introduction.tex}
+\input{chapters2/litreview.tex}
+\input{chapters2/methodology.tex}
+\input{chapters2/analysis.tex}
+\input{chapters2/discussion.tex}
+\input{chapters2/conclusion.tex}
+%%%%%%%%%%%%%%%%%%%%%%
+\clearpage
+\bibliography{citations.bib}\label{app:bibTex}
+
+\appendix
+
+\vspace{-1em}
+
+%%%%%%%%%%%%%%%%%%%%%%
+\section{Supplementary Information}\label{app:dataset}
+% The information contained in this appendix concerns some extra analysis related to each site that could help to understand the relationship between the target variable and the features.
+
+\subsection{Edaphic variables}
+\textbf{Geology structure by site}
+
+\begin{figure}[h!]
+	\centering
+	% \includegraphics[width=\textwidth]{assets/geolStrucBySite.png}
+	% \caption{\label{fig:soilClass}Geology composition at a Site in percentages.}
+\end{figure}
+
+\textbf{Bins}
+
+\begin{figure}[h!]
+	\centering
+	% \includegraphics[width=\textwidth]{assets/geolStrucBySite_Quantiles.png}
+	% \caption{\label{fig:soilClass}Geology composition at a Site in quantiles by productivity.}
+\end{figure}
+
+\newpage
+\textbf{Soil classification by site}
+
+\begin{figure}[h!]
+	\centering
+	% \includegraphics[width=\textwidth]{assets/soilClassBySite.png}
+	% \caption{\label{fig:soilClass}Soil classification at a Site in percentages.}
+\end{figure}
+
+\textbf{Bins}
+
+\begin{figure}[h!]
+	\centering
+	% \includegraphics[width=\textwidth]{assets/soilClassBySite_Quantiles.png}
+	% \caption{\label{fig:soilClass}Soil classification at a Site in quantiles by productivity.}
+\end{figure}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage
+\section{Project Scripts}\label{app:scripts}
+
+The project scripts are available online at \url{https://github.com/LNSOTOM/forestGISML}. 
+The scripts are written in \textbf{Python 3.8}.
+
+
+\end{document}
