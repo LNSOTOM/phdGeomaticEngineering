@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex thesis"] 1658978001 "thesis.aux" "thesis.bbl" "thesis" 1658978003
+["bibtex thesis"] 1659573788 "thesis.aux" "thesis.bbl" "thesis" 1659573791
   "C:/Users/laurasr/AppData/Local/Programs/MiKTeX/bibtex/bst/harvard/kluwer.bst" 1233276540 24967 81774d5bb6d51c8d305af8e2105dd833 ""
   "citations.bib" 0 -1 0 ""
-  "thesis.aux" 1658978002 3381 3655b7eb7186a41cd95c79508b43da49 "pdflatex"
+  "thesis.aux" 1659573790 3381 3655b7eb7186a41cd95c79508b43da49 "pdflatex"
   (generated)
   "thesis.bbl"
   "thesis.blg"
-["pdflatex"] 1658978001 "c:/Users/laurasr/OneDrive - University of Tasmania/Documents/latex/thesis.tex" "thesis.pdf" "thesis" 1658978003
+["pdflatex"] 1659573789 "c:/Users/laurasr/OneDrive - University of Tasmania/Documents/latex/thesis.tex" "thesis.pdf" "thesis" 1659573791
   "C:/Users/laurasr/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1658972638 120859 5052ccc648ae789802b5c881873040f5 ""
   "C:/Users/laurasr/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1658881927 10331207 575e7b54d7e8fe28c982a3828d126b6c ""
   "C:/Users/laurasr/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233948248 1004 54797486969f23fa377b128694d548df ""
@@ -126,8 +126,8 @@
   "C:/Users/laurasr/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1656236890 56148 51a9a8571c07b9921892ae11063ae853 ""
   "C:/Users/laurasr/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "C:/Users/laurasr/AppData/Local/Programs/MiKTeX/tex/plain/kotex-plain/kotexutf-core.tex" 1655776419 22796 cdbc6dbba903a5287c558339ae446988 ""
-  "assets/uniTas.jpg" 1658972822 780366 00f55ad9b4cd7f3e3b09b748c022a838 ""
-  "c:/Users/laurasr/OneDrive - University of Tasmania/Documents/latex/thesis.tex" 1658977957 6610 d00ca162fe696ecdaab159f96da170f9 ""
+  "assets/utas-logo-color.png" 1658972826 13407 e599e8b385742604efe0f8fa1f451006 ""
+  "c:/Users/laurasr/OneDrive - University of Tasmania/Documents/latex/thesis.tex" 1659573786 6619 876b4829b6ba7f568b776abf649f242f ""
   "chapters/analysis.tex" 0 -1 0 ""
   "chapters/conclusion.tex" 1658977996 42 1f8def83cdf3470d366fc17c9d01a00a ""
   "chapters/discussion.tex" 0 -1 0 ""
@@ -140,12 +140,12 @@
   "chapters2/introduction.tex" 1658977358 70 4f0d1db544df131ddd1394f4f882e8da ""
   "chapters2/litreview.tex" 1658973945 48 b0137dc38bd4a00b5e1e944d0823367b ""
   "chapters2/methodology.tex" 0 -1 0 ""
-  "thesis.aux" 1658978002 3381 3655b7eb7186a41cd95c79508b43da49 "pdflatex"
-  "thesis.bbl" 1658978001 54 644c51d86f43488906f29305195f1859 "bibtex thesis"
+  "thesis.aux" 1659573790 3381 3655b7eb7186a41cd95c79508b43da49 "pdflatex"
+  "thesis.bbl" 1659573789 54 644c51d86f43488906f29305195f1859 "bibtex thesis"
   "thesis.cls" 1658977796 5917 ddd46471293d060d433af92f752625ce ""
-  "thesis.out" 1658978002 2126 292921d150b8309d0faa1a7091a02dc4 "pdflatex"
-  "thesis.tex" 1658977957 6610 d00ca162fe696ecdaab159f96da170f9 ""
-  "thesis.toc" 1658978002 1129 b837eaa1849d749f1a37cdd29a4e8144 "pdflatex"
+  "thesis.out" 1659573790 2126 292921d150b8309d0faa1a7091a02dc4 "pdflatex"
+  "thesis.tex" 1659573786 6619 876b4829b6ba7f568b776abf649f242f ""
+  "thesis.toc" 1659573790 1129 b837eaa1849d749f1a37cdd29a4e8144 "pdflatex"
   (generated)
   "thesis.aux"
   "thesis.log"

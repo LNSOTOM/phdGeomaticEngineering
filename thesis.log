@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7.25) (preloaded format=pdflatex 2022.7.27)  28 JUL 2022 13:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7.25) (preloaded format=pdflatex 2022.7.27)  4 AUG 2022 10:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -626,14 +626,14 @@ Package hyperref Info: Link coloring OFF on input line 12.
 \@outlinefile=\write3
 \openout3 = `thesis.out'.
 
-<assets/uniTas.jpg, id=54, 7374.55125pt x 6936.91624pt>
-File: assets/uniTas.jpg Graphic file (type jpg)
-<use assets/uniTas.jpg>
-Package pdftex.def Info: assets/uniTas.jpg  used on input line 14.
-(pdftex.def)             Requested size: 123.77074pt x 116.3277pt.
+<assets/utas-logo-color.png, id=54, 228.855pt x 208.78pt>
+File: assets/utas-logo-color.png Graphic file (type png)
+<use assets/utas-logo-color.png>
+Package pdftex.def Info: assets/utas-logo-color.png  used on input line 14.
+(pdftex.def)             Requested size: 123.77074pt x 112.91472pt.
  [1
 
-{C:/Users/laurasr/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./assets/uniTas.jpg>] [2] [3] [4
+{C:/Users/laurasr/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./assets/utas-logo-color.png>] [2] [3] [4
 
 ] (thesis.toc [5
 
@@ -731,16 +731,16 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 (\end occurred when \iffalse on line 30 was incomplete) 
 Here is how much of TeX's memory you used:
  14572 strings out of 478337
- 234771 string characters out of 2835722
+ 234834 string characters out of 2835722
  736668 words of memory out of 3000000
  32661 multiletter control sequences out of 15000+600000
  475068 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  85i,12n,90p,1171b,498s stack positions out of 10000i,1000n,20000p,200000b,80000s
 <C:/Users/laurasr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/laurasr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/laurasr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on thesis.pdf (18 pages, 849169 bytes).
+Output written on thesis.pdf (18 pages, 83194 bytes).
 PDF statistics:
- 177 PDF objects out of 1000 (max. 8388607)
+ 178 PDF objects out of 1000 (max. 8388607)
  33 named destinations out of 1000 (max. 500000)
  118 words of extra memory for PDF output out of 10000 (max. 10000000)
 
