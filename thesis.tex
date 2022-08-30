@@ -44,18 +44,25 @@ School of Geography, Planning and Spatial Science}
 \contentspage
 %%%%%%%%%%%%%%%%%%%%%%
 \pagestyle{header-footer}
-
-% \part{History of Lua\TeX}
-\part{Deriving fractional cover from drone multispectral and lidar data}
+\part{Introduction}
 \input{chapters/introduction.tex}
-%%%%%%%%%%%%%%%%%%%%%%
-\pagestyle{header-footer}
-
 \input{chapters/litreview.tex}
 \input{chapters/methodology.tex}
 \input{chapters/analysis.tex}
 \input{chapters/discussion.tex}
 \input{chapters/conclusion.tex}
+\setcounter{chapter}{0}
+%%%%%%%%%%%%%%%%%%%%%%
+
+% \part{History of Lua\TeX}
+\pagestyle{header-footer}
+\part{Deriving fractional cover from drone multispectral and lidar data}
+\input{chapters1/introduction.tex}
+\input{chapters1/litreview.tex}
+\input{chapters1/methodology.tex}
+\input{chapters1/analysis.tex}
+\input{chapters1/discussion.tex}
+\input{chapters1/conclusion.tex}
 \setcounter{chapter}{0}
 
 \part{Structure properties derived from drone lidar data}
@@ -67,6 +74,8 @@ School of Geography, Planning and Spatial Science}
 \input{chapters2/conclusion.tex}
 %%%%%%%%%%%%%%%%%%%%%%
 \clearpage
+
+
 \bibliography{citations.bib}\label{app:bibTex}
 
 \appendix
