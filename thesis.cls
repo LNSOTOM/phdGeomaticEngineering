@@ -25,7 +25,7 @@
 \RequirePackage{listings}
 \RequirePackage{epstopdf}
 \RequirePackage{rotating}
-\RequirePackage[hidelinks=true]{hyperref}
+
 
 
 
@@ -141,7 +141,7 @@
 		\ifcolorprint
 			\includegraphics[width=0.3\textwidth]{assets/uniTas.jpg}
 		\else
-			\includegraphics[width=0.3\textwidth]{assets/utas-logo-color.png}
+			\includegraphics[width=0.3\textwidth]{assets/uniTas.jpg}
 		\fi
 		\vfill
 		\textbf{University of Tasmania}\\
