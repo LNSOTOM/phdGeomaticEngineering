@@ -7,7 +7,15 @@
 \RequirePackage[dvipsnames]{xcolor}
 \RequirePackage[marginpar=25mm, left=45mm, right=20mm]{geometry}
 \RequirePackage{graphicx}
-\RequirePackage[longnamesfirst]{natbib}
+% \RequirePackage[square,numbers,sectionb]{natbib}
+% \RequirePackage[sectionbib]{natbib}
+% \RequirePackage{bibunits}
+\RequirePackage[resetlabels,labeled]{multibib}
+\RequirePackage{natbib}
+% \RequirePackage[sectionbib]{chapterbib}
+\RequirePackage[nottoc]{tocbibind}
+% \RequirePackage[style=authoryear]{biblatex}
+
 \RequirePackage{fancyhdr}
 \RequirePackage{datetime}
 \RequirePackage{booktabs}
@@ -25,6 +33,7 @@
 \RequirePackage{listings}
 \RequirePackage{epstopdf}
 \RequirePackage{rotating}
+\RequirePackage{tocloft}
 
 
 
@@ -120,7 +129,7 @@
 }
 
 % Table of Contents
-\setcounter{tocdepth}{1}
+\setcounter{tocdepth}{3}
 
 % Tables
 \setlength\cellspacetoplimit{0.8ex}
@@ -161,12 +170,57 @@
 	\newpage
 }
 
+\newlength\mylength
+\renewcommand\cftchappresnum{Chap~}
+\settowidth\mylength{\bfseries\cftchappresnum\cftchapaftersnum}
+\addtolength\cftchapnumwidth{\mylength}
+
+
 % Contents Page
-\newcommand{\contentspage}{%
+\newcommand{\contentspage}{%  
+    % Add 'Chap' in table content 
+    \pagenumbering{roman} 
+    % \frontmatter
+    % \addcontentsline{toc}{section}{Abstract}
+    \addcontentsline{toc}{chapter}{Abstract}
+    \pagenumbering{roman} 
+    % \section*{Abstract}
+   
 	\tableofcontents
+    % \addcontentsline{toc}{section}{References}
+    % % Abstract   
+   % \renewcommand{\abstract}{}
+   %   \begin{abstract}
+   %     \pagenumbering{roman}
+   %     \addcontentsline{toc}{chapter}{Abstract}
+   %   \end{abstract}
+
+     % % Acknowledgements
+   % \renewcommand{\acknowledgements}{}
+   %   \begin{acknowledgements}  
+    
+        
+   %     \addcontentsline{toc}{chapter}{Acknowledgements}
+   %   \end{acknowledgements}
+     
+   \pagenumbering{arabic}
+   % \mainmatter
 	\thispagestyle{empty}
 	\clearpage
 }
+
+
+
+% % Contents Page
+% \newcommand{\contentspage}{%
+% 	\tableofcontents
+%     \newlength\mylength
+%     \renewcommand\cftchappresnum{Chap~}
+%     \settowidth\mylength{\bfseries\cftchappresnum\cftchapaftersnum}
+%     \addtolength\cftchapnumwidth{\mylength}
+% 	\thispagestyle{empty}
+% 	\clearpage
+% }
 
 % Appendices
 \newcommand{\appendixnumberline}[1]{Appendix\space}
@@ -204,24 +258,60 @@
 }
 \newcommand{\codefile}[1]{{\footnotesize\lstinputlisting{#1}}}
 
-% Bibliography
-\renewcommand\bibname{References}
-\bibliographystyle{kluwer}
-\fancypagestyle{bibliography}{%
-	\fancyhead[R]{BIBLIOGRAPHY}
-}
-\let\oldbibliography\bibliography
-\makeatletter
-\renewcommand{\bibliography}[1] {%
-	\begingroup
-	    \fontsize{10pt}{10pt}\selectfont
-	    \thispagestyle{appendix}
-	    \pagestyle{bibliography}
-	    \addcontentsline{toc}{chapter}{References}
-     
-		\oldbibliography{#1}
-	\endgroup
-}
-\makeatother
+%Bibliography
+% \renewcommand\bibname{References}
+% \bibliographystyle{kluwer}
+% \fancypagestyle{bibliography}{%
+% 	\fancyhead[R]{BIBLIOGRAPHY}
+% }
+% \let\oldbibliography\bibliography
+% \makeatletter
+% \renewcommand{\bibliography}[1] {%
+% 	\begingroup
+% 	    \fontsize{10pt}{10pt}\selectfont
+% 	    \thispagestyle{appendix}
+% 	    \pagestyle{bibliography}
+% 	  \addcontentsline{toc}{section}{References}    
+% 		\oldbibliography{#1}
+% 	\endgroup
+% }
+% \makeatother
+
+% {\renewcommand{\bibsection}{}
+% \putbib
+% }
+
+% \renewcommand{\bibname}{References}
+\renewcommand{\bibsection}{\section{\bibname}{References}
+    % \bibliographystyle{kluwer}
+    % \bibliography{citationschap1, citationsfinal} 
+
+
+% {\renewcommand{\bibsection}{}
+%     \bibliographystyle{kluwer}
+    
+%     \bibliography{citationsfinal}
+% }
+
+% \renewcommand{\refname}{First}
+% \bibliographystyle{kluwer}
+% \nocite{*}
+% \bibliography{chapters1/citationschap1} 
+
+% \renewcommand{\refname}{Second}
+% \bibliographystyle{kluwer}
+% \nocites{*}
+% \bibliography{chapters2/citationsfinal} 
+
+
+% \renewcommand{\bibsection}{Articles}
+% \bibliographystyle{plain}
+% \nocite{citations_chap1}
+% \bibliography{citations_chap1}
+
+
+
+
+
 
 

@@ -1,4 +1,9 @@
 \documentclass{thesis}
+% \usepackage[sectionbib]{natbib}
+% \usepackage{bibunits}
+\newcites{I}{References Chapter 1}
+\newcites{II}{References Chapter 2}
+
 %%%%%%%%%%%%%%%%%%%%%%
 \title{Improved monitoring of ecosystem resilience using high-resolution remote sensing}
 \author{Laura Natali Sotomayor, \\
@@ -13,7 +18,7 @@ School of Geography, Planning and Spatial Science}
 
 \maketitle
  
-\section*{Abstract}
+\chapter*{Abstract}
 
 % As technologies and computer storage capacity develops, there are ever increasing amounts of data available for us to use.  Despite this increase in available data, historically there have been limited benefits from it because of the issues involved in analysis of such large quantities because traditional statistical techniques are slow to process such large volumes. The recent development of machine learning algorithms and cloud technologies presents an unique opportunity to process these volumes of data, and have the potential to provide much greater accuracy and model predictive power in output results. 
 
@@ -25,12 +30,13 @@ School of Geography, Planning and Spatial Science}
 
 \clearpage
 
-\section*{Acknowledgements}
+\chapter*{Acknowledgements}
 
 \ifdrafting\else
 \textbf{Dr. Arko Lucieer} (Head of School, Geography, Planning, and Spatial Sciences, University of Tasmania), 
 \textbf{Dr. Bethany Melville} (Lecturer in Spatial Sciences) 
 % The authors would like to thank Dr. Matthew J. Cracknell for assisting with field machine learning process, understanding of data processing, transformation and reprojection. Besides, my father \textbf{Jesus Sotomayor} (Petrophysicist Engineer/Geoscientist) has been assessing the machine learning process, mapping and geological interpretations and which comments have improved the clarity of this ICT Honours Master Thesis. Dr Muhammed was a great mentor for the shape of the document and iterative feedback. Dr. Musk gave me feedback and understanding of features that can affect the forest productivity, and a good understanding of LiDAR technology. Besides, my mum \textbf{Patricia Ramirez} and \textbf{Robert Darwall} have been a great support for having all set up at home during this Covid time. In addition, my partner \textbf{Claire Butler} (Marine scientist) for all the support for keeping my light bright and meaningful comments to improve this Thesis.
+\newpage
 
 \vspace{5mm}
 \begin{quotation}
@@ -44,39 +50,46 @@ School of Geography, Planning and Spatial Science}
 \contentspage
 %%%%%%%%%%%%%%%%%%%%%%
 \pagestyle{header-footer}
-\part{Introduction}
-\input{chapters/introduction.tex}
-\input{chapters/litreview.tex}
-\input{chapters/methodology.tex}
-\input{chapters/analysis.tex}
-\input{chapters/discussion.tex}
-\input{chapters/conclusion.tex}
-\setcounter{chapter}{0}
+% \part{General Introduction}
+\input{chapters1/1_introduction.tex}
+\input{chapters1/litreview.tex}
+% \setcounter{chapter}{0}
+
 %%%%%%%%%%%%%%%%%%%%%%
 
-% \part{History of Lua\TeX}
 \pagestyle{header-footer}
-\part{Deriving fractional cover from drone multispectral and lidar data}
-\input{chapters1/introduction.tex}
-\input{chapters1/litreview.tex}
-\input{chapters1/methodology.tex}
-\input{chapters1/analysis.tex}
-\input{chapters1/discussion.tex}
-\input{chapters1/conclusion.tex}
-\setcounter{chapter}{0}
+% \part{Deriving fractional cover from drone multispectral and lidar data}
+\input{chapters2/1_introduction}
+\input{chapters2/2_methodology}
+\input{chapters2/3_modelling}
+\input{chapters2/4_results}
+\input{chapters2/5_discussion}
+\input{chapters2/6_conclusion}
+\input{chapters2/litreview}
+% \setcounter{chapter}{0}
 
-\part{Structure properties derived from drone lidar data}
-\input{chapters2/introduction.tex}
-\input{chapters2/litreview.tex}
-\input{chapters2/methodology.tex}
-\input{chapters2/analysis.tex}
-\input{chapters2/discussion.tex}
-\input{chapters2/conclusion.tex}
+%%%%%%%%%%%%%%%%%%%%%%
+\clearpage
+
+\pagestyle{header-footer}
+% \part{Structure properties derived from drone lidar data}
+\input{chapters3/introduction}
+\input{chapters3/litreview}
+\input{chapters3/methodology}
+\input{chapters3/analysis}
+\input{chapters3/discussion}
+\input{chapters3/conclusion}
 %%%%%%%%%%%%%%%%%%%%%%
 \clearpage
 
 
-\bibliography{citations.bib}\label{app:bibTex}
+% \bibliographystyle{abbrvnat}
+
+
+
+
+
+
 
 \appendix
 
